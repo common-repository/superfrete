@@ -1,0 +1,646 @@
+input[type=radio]:checked::before {
+  background-color: #0FAE79 !important;
+}
+
+input[type=text]:focus {
+  box-shadow: 0 0 0 1px #0FAE79;
+}
+
+input[type=checkbox]:focus,
+input[type=color]:focus,
+input[type=date]:focus,
+input[type=datetime-local]:focus,
+input[type=datetime]:focus,
+input[type=email]:focus,
+input[type=month]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+input[type=radio]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=text]:focus,
+input[type=time]:focus,
+input[type=url]:focus,
+input[type=week]:focus,
+select:focus,
+textarea:focus {
+  border-color: #0FAE79;
+  box-shadow: 0 0 0 1px #0FAE79;
+  outline: 2px solid transparent;
+}
+
+/* */
+label.switch {
+  /*display: flex;
+    width: 100%;*/
+  float: left;
+  clear: both;
+  background: #fff;
+  padding: 10px 0px;
+}
+
+label.switch>input {
+  display: none;
+}
+
+label.switch i {
+  display: inline-block;
+  float: right;
+  padding: 2px;
+  width: 40px;
+  height: 20px;
+  border-radius: 13px;
+  vertical-align: middle;
+  transition: .25s .09s;
+  position: relative;
+  background: #d8d9db;
+  box-sizing: initial;
+}
+
+label.switch i:after {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: 2px;
+  transition: .25s;
+}
+
+label.switch>input:checked+i {
+  background: #0FAE79;
+}
+
+label.switch>input:checked+i:after {
+  transform: translateX(20px);
+}
+
+label.switch:hover {
+  cursor: pointer;
+}
+
+/* */
+#wpcontent {
+  /*font-family: 'Poppins', sans-serif;*/
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+}
+
+.woocommerce-layout {
+  float: left;
+  clear: both;
+  background: #fff;
+  color: #4D4D4D !important;
+  width: 96%;
+  padding: 30px;
+}
+
+h2,
+h3 {
+  color: #4D4D4D !important;
+}
+
+.bt-superfrete {
+  display: block;
+  margin-top: 3px;
+  color: #fff;
+  text-align: center;
+  padding: 16px 24px;
+  border-radius: 12px;
+  background: #0FAE79 !important;
+  border-color: #0FAE79 !important;
+  box-shadow: none !important;
+  text-decoration: unset;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.bt-superfrete:hover {
+  background: #028559 !important;
+}
+
+.bt-superfrete:active,
+.bt-superfrete:hover,
+.bt-superfrete:focus {
+  color: #fff;
+  text-decoration: unset;
+}
+
+.bt-superfrete-disabled {
+  background: #028559 !important;
+  cursor: default !important;
+}
+
+.text-link {
+  color: #0FAE79 !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+}
+
+.obj-bg {
+  background: #fff url(../images/obj-bg.png) no-repeat top right;
+}
+
+.woocommerce-header {
+  float: left;
+  clear: both;
+  margin-bottom: 30px;
+}
+
+.main-form h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.main-form h3 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.woocommerce-form {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+.woocommerce-step-container {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.lb-editar-meus-enderecos {
+  display: none;
+  font-size: 14px;
+  font-weight: normal !important;
+}
+
+.lk-editar-meus-enderecos {
+  color: #0FAE79;
+}
+
+.lk-editar-meus-enderecos:hover {
+  color: #0FAE79;
+  text-decoration: underline;
+}
+
+/*
+.lb-editar-meus-enderecos {
+  display: none;
+  position: absolute;
+  bottom: -32px;
+  width: 257px;
+  right: 0px;
+  color: #0FAE79;
+}
+.lb-editar-meus-enderecos:hover {
+  color: #0FAE79;
+  text-decoration:underline;
+}
+*/
+.woocommerce-form .woocommerce-step-container>span {
+  float: left;
+  margin-right: 15px;
+  background: #99FFCC;
+  color: #4D4D4D;
+  padding: 7px 8px;
+  border-radius: 16px;
+  margin-top: 32px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.woocommerce-step-box {
+  float: left;
+  border: 1px solid #e8e8e8;
+  padding: 16px;
+  width: 87%;
+  border-radius: 18px;
+}
+
+.superfrete-cep-origem {
+  min-width: 340px;
+  background: #f2f2f2;
+}
+
+.obj-seta {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  right: 8px;
+  cursor: pointer;
+}
+
+.obj-seta.open {
+  transform: rotate(180deg);
+}
+
+.lista-enderecos-origem {
+  list-style: none;
+  overflow: hidden;
+  min-width: 360px;
+  height: 70px;
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  top: 0px;
+  right: -2px;
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+}
+
+.item-endereco-origem {
+  padding: 8px 12px;
+  border: 1px solid #ababab;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  height: 50px;
+}
+
+.item-endereco-origem.active {
+  background: #f2f2f2;
+}
+
+.item-endereco-origem:hover {
+  border-color: #0FAE79;
+}
+
+.woocommerce-step-box label {
+  cursor: default;
+  float: left;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.woocommerce-step-box label span {
+  font-weight: bold;
+}
+
+.box-component {
+  float: right;
+  align-items: center;
+  display: flex;
+  min-height: 65px;
+}
+
+.box-component-label {
+  float: left;
+  align-items: center;
+  display: flex;
+  height: 65px;
+}
+
+.align-right {
+  float: right !important;
+}
+
+.woocommerce-step-final {
+  float: left;
+  clear: both;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.woocommerce-step-final h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.woocommerce-step-final h5 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.woocommerce-step-final a {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.woocommerce-step-final .woocommerce-button {
+  float: unset !important;
+}
+
+.input-box {
+  float: left;
+  margin-left: 15px;
+}
+
+.box-component.text {
+  position: relative;
+}
+
+.box-component.text label {
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  font-size: 11px !important;
+  color: #a1a1a1;
+}
+
+.box-component.text input {
+  padding: 24px 12px 6px 12px;
+  border: 1px solid #ababab;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 12px;
+}
+
+.box-component.radio input {
+  float: left;
+  margin-top: 5px;
+}
+
+.box-component.radio label {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.box-component.number input,
+.box-component.number button {
+  float: left;
+  margin-left: 6px;
+  width: 54px;
+  height: 54px;
+  color: #000;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #a1a1a1;
+}
+
+.box-component.number input {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.box-component.number button {
+  font-size: 32px;
+  color: #0FAE79;
+}
+
+.btn-number {
+  cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* */
+.tx-token-sandbox {
+  display: none;
+}
+
+.token-form .logo-super-frete {
+  width: 130px;
+  margin-bottom: 30px;
+}
+
+.token-form .lb-seus-tokens {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.token-form .lb-seus-tokens+p,
+.token-form .sub-text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.app-solicitar-token p {
+  margin-bottom: 0px;
+}
+
+.token-form .lb-titulo-token {
+  background: transparent;
+  width: 100%;
+  float: left;
+  clear: both;
+}
+
+.token-form .lb-subtitulo-super {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.token-form .lb-token-sandbox {
+  float: left;
+  margin: 3px 12px 1px 1px;
+}
+
+.token-form .app-token {
+  background: #fff;
+}
+
+.token-form .app-solicitar-token {
+  float: left;
+}
+
+.token-form .bt-fale-conosco {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #99FFCC;
+  color: #4D4D4D;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 16px 40px;
+  border-radius: 32px;
+  text-decoration: none;
+  box-shadow: 0px 1px 12px #888888;
+  transition: all 0.2s ease-in;
+}
+
+.token-form .bt-fale-conosco img {
+  float: left;
+  margin-top: -4px;
+  margin-right: 20px;
+}
+
+.token-form .bt-fale-conosco:hover {
+  box-shadow: 0px 1px 16px #888888;
+}
+
+.token-form .bt-solicitar-token,
+.token-form .bt-salvar-token {
+  border: 1px solid #0FAE79;
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  clear: both;
+  float: left;
+  padding: 16px 48px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400px;
+}
+
+.token-form .bt-solicitar-token {
+  background: #fff;
+  color: #0fae79;
+  box-shadow: 0px 0px 16px rgba(200, 201, 202, 0.25);
+}
+
+.token-form .bt-solicitar-token:hover {
+  color: #008558;
+}
+
+.token-form .bt-salvar-token {
+  background: #0FAE79;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.token-form .bt-salvar-token:hover {
+  background: #008558;
+  cursor: pointer;
+}
+
+.token-form .tx-token {
+  border-radius: 8px;
+  border: 1px solid #ededed;
+  color: #999999;
+  height: fit-content;
+  max-width: 900px;
+  width: 100%;
+  padding: 10px;
+  resize: none;
+}
+
+.token-form .box-token {
+  float: left;
+  clear: both;
+  margin-bottom: 32px;
+  max-width: 850px;
+  width: 100%;
+}
+
+.token-form .break-line {
+  float: left;
+  clear: both;
+}
+
+.token-form .obj-robot {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  max-width: 25%;
+}
+
+.token-form .lb-link-super {
+  color: #0FAE79;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 600px;
+}
+
+.token-form .lb-link-super:hover {
+  color: #008558;
+  text-decoration: none;
+}
+
+.token-form .tx-token-sandbox {
+  display: block;
+}
+
+.token-form .app-precisa-ajuda p {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.configurar-token-breadcrumb {
+  display: none;
+  color: #999999;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.configurar-token-breadcrumb a {
+  color: #999999;
+  text-decoration: none;
+}
+
+.configurar-token-breadcrumb span {
+  color: #0FAE79;
+  cursor: normal;
+}
+
+.mask-value {
+  display: none;
+  position: absolute;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.real-mask {
+  top: 35px;
+  left: 12px;
+}
+
+.percent-mask {
+  top: 35px;
+  left: 12px;
+}
+
+#wpfooter {
+  display: none;
+}
+
+.token-form .box-token p.sub-text {
+  max-width: 900px !important;
+}
+
+@media (max-width: 1024px) {
+  .obj-robot {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    max-width: 22%;
+  }
+
+  .tx-token {
+    width: 440px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .obj-robot {
+    max-width: 24%;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1500px) {
+  .obj-robot {
+    max-width: 22%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .obj-robot {
+    max-width: 20%;
+  }
+}
+
+/* */
